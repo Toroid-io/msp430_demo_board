@@ -1,0 +1,17 @@
+# Backup files
+**/*-bak
+**/*.bak
+**/*.bck
+
+# Cache library
+**/*-cache.lib
+**/*-rescue.lib
+
+# Netlists
+**/*.net
+
+# BOM
+**/*.xml
+
+# Autosave
+**/_autosave*
