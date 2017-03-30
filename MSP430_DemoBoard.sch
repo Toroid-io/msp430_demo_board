@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:MSP430_DemoBoard-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -218,21 +217,6 @@ F 3 "" H -150 400 50  0001 C CNN
 	1    4550 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L JTAG-MSP430 J4
-U 1 1 58DDB7C3
-P 8150 2300
-F 0 "J4" H 8250 3044 60  0000 C CNN
-F 1 "JTAG-MSP430" H 8250 2938 60  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 400 -1350 60  0001 C CNN
-F 3 "" H 400 -1350 60  0001 C CNN
-	1    8150 2300
-	1    0    0    -1  
-$EndComp
-NoConn ~ 8600 2050
-NoConn ~ 8600 2250
-NoConn ~ 8600 2350
-NoConn ~ 8600 2450
 Text Label 9200 2150 2    60   ~ 0
 TEST
 $Comp
@@ -271,7 +255,6 @@ Text Label 7400 2150 0    60   ~ 0
 TCK
 Text Label 7400 2350 0    60   ~ 0
 RST
-NoConn ~ 7900 2450
 $Comp
 L GND #PWR05
 U 1 1 58DDCAE6
@@ -1080,4 +1063,15 @@ Text Label 9000 3950 0    60   ~ 0
 P1.4
 Text Label 9000 3850 0    60   ~ 0
 P1.5
+$Comp
+L JTAG-MSP430 J4
+U 1 1 58DD8471
+P 8150 2300
+F 0 "J4" H 8250 3044 60  0000 C CNN
+F 1 "JTAG-MSP430" H 8250 2938 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x07_Pitch2.54mm" H 2200 -550 60  0001 C CNN
+F 3 "" H 2200 -550 60  0001 C CNN
+	1    8150 2300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
