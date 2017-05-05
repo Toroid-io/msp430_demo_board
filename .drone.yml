@@ -1,0 +1,24 @@
+pipeline:
+  kicad:
+    image: toroid/drone-kicad
+    projects_names:
+      - MSP430_DemoBoard
+    schematic: true
+    gerber:
+      protel: true
+      all: true
+    svg: true
+    library: https://git.toroid.io/KiCad/TOROID-KiCad-Library.git
+    pretty: https://git.toroid.io/KiCad/TOROID-KiCad.pretty.git
+    template: https://git.toroid.io/KiCad/TOROID-KiCad.pretty.git
+
+  deploy:
+    image: toroid/drone-mella
+    server: https://cloud.toroid.io
+    remote_folder: "toroid-osh/msp_demo_board"
+    parentdir: false
+    name: latest
+    files:
+      - "CI-BUILD/*"
+    when:
+      event: push
