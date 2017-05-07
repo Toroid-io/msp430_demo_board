@@ -17,7 +17,7 @@ pipeline:
     server: https://cloud.toroid.io
     remote_folder: "toroid-osh/msp_demo_board"
     parentdir: false
-    name: latest
+    tgz_name: latest
     files:
       - "CI-BUILD/*"
     when:
