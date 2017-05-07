@@ -1,4 +1,4 @@
-update=Thu 30 Mar 2017 19:03:54 -03
+update=Sun 07 May 2017 16:01:14 -03
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=/usr/share/kicad/template/Toroid-KiCad-Templates/Sch_A4_EN.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=
@@ -70,4 +60,14 @@ LibName28=contrib
 LibName29=valves
 LibName30=msp430
 LibName31=switches
-LibName32=TOROID-KiCad-Library/TOROID
+LibName32=toroid-kicad-library/TOROID
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/usr/share/kicad/template/toroid-kicad-templates/Sch_A4_EN.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
