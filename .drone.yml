@@ -8,9 +8,9 @@ pipeline:
       protel: true
       all: true
     svg: true
-    library: https://git.toroid.io/KiCad/TOROID-KiCad-Library.git
-    pretty: https://git.toroid.io/KiCad/TOROID-KiCad.pretty.git
-    template: https://git.toroid.io/KiCad/TOROID-KiCad.pretty.git
+    library: https://github.com/Toroid-io/toroid-kicad-library.git
+    pretty: https://github.com/Toroid-io/toroid-kicad.pretty.git
+    template: https://github.com/Toroid-io/toroid-kicad-templates.git
 
   deploy:
     image: toroid/drone-mella
@@ -22,3 +22,5 @@ pipeline:
       - "CI-BUILD/*"
     when:
       event: push
+      branch: master
+      status: success
