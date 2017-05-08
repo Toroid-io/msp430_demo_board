@@ -17,10 +17,10 @@ pipeline:
     server: https://cloud.toroid.io
     remote_folder: "toroid-osh/msp_demo_board"
     parentdir: false
-    tgz_name: latest
+    tgz_name: scott
     files:
       - "CI-BUILD/*"
     when:
       event: push
-      branch: master
-      status: success
+      branch: scott_test
+      status: [success, failure]
