@@ -11,6 +11,7 @@ pipeline:
     library: https://github.com/Toroid-io/toroid-kicad-library.git
     pretty: https://github.com/Toroid-io/toroid-kicad.pretty.git
     template: https://github.com/Toroid-io/toroid-kicad-templates.git
+    stp: true
 
   deploy:
     image: toroid/drone-mella
