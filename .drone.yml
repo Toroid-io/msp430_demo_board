@@ -5,7 +5,6 @@ pipeline:
       - MSP430_DemoBoard
     schematic: true
     gerber:
-      protel: true
       all: true
     svg: true
     library: https://github.com/Toroid-io/toroid-kicad-library.git
