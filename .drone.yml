@@ -1,6 +1,6 @@
 pipeline:
   kicad:
-    image: toroid/drone-kicad
+    image: toroid/drone-kicad:dev
     projects_names:
       - MSP430_DemoBoard
     schematic: true
@@ -12,16 +12,24 @@ pipeline:
     pretty: https://github.com/Toroid-io/toroid-kicad.pretty.git
     template: https://github.com/Toroid-io/toroid-kicad-templates.git
     stp: true
+    svg: true
+    svg_lib:
+      - https://github.com/yaqwsx/PcbDraw-Lib
+    svg_lib_dirs:
+      - PcbDraw-Lib/KiCAD-base
+    tags:
+      sed: true
 
   deploy:
     image: toroid/drone-mella
     server: https://cloud.toroid.io
     remote_folder: "toroid-osh/msp_demo_board"
     parentdir: false
-    tgz_name: latest
+    tgz_name: dev_test
     files:
       - "CI-BUILD/*"
     when:
       event: push
-      branch: master
+      branch: dev_test
       status: success
+    secrets: [owncloud_username, owncloud_password]
